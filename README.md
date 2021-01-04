@@ -5,23 +5,23 @@ These are my solutions for the 10 day winter-break coding challenge. Event link:
   • [Day 1: Palindromes, web scraping] (#Day 1: Palindromes, web scraping)
 
 ## 🧐 Day 1: Palindromes, web scraping
-  Requirements (from prompt):
+  ❗ Requirements (from prompt):
   
   1) Check if an inputted word is a palindrome, display adequate message.
   
   2) Run a webpage that displays anagrams of an inputted word.
   
-  My extension:
+  ↗️ My extension:
   
   ad 2) Use selenium library to web scrape in search for data which I display in the terminal.
   
-  Learned today: 
+  🧠 Learned today: 
   
   •  web scraping basics, finding specific tags and classes on a page
   
   •  selenium library for Python
   
-  Helpful links:
+  🔗 Helpful links:
   https://selenium-python.readthedocs.io/
   https://www.w3schools.com/python/python_regex.asp
   https://sites.google.com/a/chromium.org/chromedriver/downloads
