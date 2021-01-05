@@ -4,6 +4,7 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
 
 ## 📖 Table of contents:
   • [Day 1: Palindromes, web scraping] (#Day 1: Palindromes, web scraping)
+  • [Day 2: API, openpyxl] (#Day 2: API, openpyxl)
 
 ## 🧐 Day 1: Palindromes, web scraping
   ❗ Requirements (from prompt):
@@ -26,5 +27,33 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   https://selenium-python.readthedocs.io/
   https://www.w3schools.com/python/python_regex.asp
   https://sites.google.com/a/chromium.org/chromedriver/downloads
+
+## ⛅ Day 2: API, openpyxl
+  ❗ Requirements (from prompt):
+  
+  1) Display date, time, day of the week, temperature in a given city. Use https://rapidapi.com/commu.../api/open-weather-map/endpoints
+
+  2) Display a random quote https://type.fit/api/quotes
+
+  3) Use datetime and request libraries
+
+  
+  ↗️ My extension:
+  
+  Create a calendar card in excel with data from the weather API.
+  
+  Error messages for requests with error codes other than 200.
+  
+  🧠 Learned today: 
+  
+  •  a few useful options for editing spreadsheet (merging, coloring cells, changing font, style)
+  
+  •  method for calculations on dates (timedelta), strftime for date formatting
+  
+  🔗 Helpful links:
+  https://openweathermap.org/current
+  https://rapidapi.com/community/api/open-weather-map/
+  https://requests.readthedocs.io/en/master/user/quickstart/#response-content
+
 
  
