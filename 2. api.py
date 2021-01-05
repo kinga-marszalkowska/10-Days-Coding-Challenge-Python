@@ -117,6 +117,6 @@ if response.status_code == 200:
     data = get_city_weather_info(response)
     create_calendar_card(date=data['date'], quote=get_random_quote()['text'], all_data=data)
 elif response.status_code == 404:
-    print("Check the spelling of city name.")
+    print("Check the spelling of city name or your API key.")
 elif response.status_code == 500:
     print("Sorry, it's our fault. Come back later.")
