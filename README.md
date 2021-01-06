@@ -7,7 +7,7 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   
   • [Day 2: API, openpyxl] (#Day 2: API, openpyxl)
   
-  • [Day 3: API, openpyxl] (#Day 3: Automatic email sending)
+  • [Day 3: Automatic email sending] (#Day 3: Automatic email sending)
 
 ## 🧐 Day 1: Palindromes, web scraping
   ❗ Requirements (from prompt):
