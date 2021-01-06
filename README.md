@@ -4,7 +4,10 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
 
 ## 📖 Table of contents:
   • [Day 1: Palindromes, web scraping] (#Day 1: Palindromes, web scraping)
+  
   • [Day 2: API, openpyxl] (#Day 2: API, openpyxl)
+  
+  • [Day 3: Automatic email sending] (#Day 3: Automatic email sending)
 
 ## 🧐 Day 1: Palindromes, web scraping
   ❗ Requirements (from prompt):
@@ -38,7 +41,7 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   3) Use datetime and request libraries
 
   
-  ↗️ My extension:
+  ↗️ My extensions:
   
   Create a calendar card in excel with data from the weather API.
   
@@ -55,5 +58,30 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   https://rapidapi.com/community/api/open-weather-map/
   https://requests.readthedocs.io/en/master/user/quickstart/#response-content
 
+## 📧 Day 3: Automatic email sending
+
+ ❗ Requirements (from prompt):
+  
+  1) Send emails to people from a mailing list (in csv or xls), with a message and an image
+
+  2) Secure program for edge cases (no image file, no mailing list etc.)
+
+  
+  ↗️ My extensions:
+  
+  I used a function for getting random quotes from API (from Day 2) as a message content.
+  
+  I used bing_image_downloader to download an image that represents the quote.  
+  
+  🧠 Learned today: 
+  
+  •  smtplib for sending emails
+  
+  🔗 Helpful links:
+  
+  https://pypi.org/project/bing-image-downloader/
+  https://docs.python.org/3/library/email.examples.html
+  https://www.youtube.com/watch?v=m9ojKEBYCvQ
+  
 
  
