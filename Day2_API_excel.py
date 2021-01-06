@@ -111,12 +111,13 @@ def create_calendar_card(date, quote, all_data):
     workbook.save(filename=all_data['city'] + re.sub("[/.:]", ".", str(all_data['date'])) + ".xlsx")
 
 
-response = get_data_from_weather_api()
+if __name__ == '__main__':
+    response = get_data_from_weather_api()
 
-if response.status_code == 200:
-    data = get_city_weather_info(response)
-    create_calendar_card(date=data['date'], quote=get_random_quote()['text'], all_data=data)
-elif response.status_code == 404:
-    print("Check the spelling of city name or your API key.")
-elif response.status_code == 500:
-    print("Sorry, it's our fault. Come back later.")
+    if response.status_code == 200:
+        data = get_city_weather_info(response)
+        create_calendar_card(date=data['date'], quote=get_random_quote()['text'], all_data=data)
+    elif response.status_code == 404:
+        print("Check the spelling of city name or your API key.")
+    elif response.status_code == 500:
+        print("Sorry, it's our fault. Come back later.")
