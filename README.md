@@ -8,6 +8,8 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   • [Day 2: API, openpyxl] (#Day 2: API, openpyxl)
   
   • [Day 3: Automatic email sending] (#Day 3: Automatic email sending)
+  
+  • [Day 4: BMI calculator] (#Day 4: BMI calculator)
 
 ## 🧐 Day 1: Palindromes, web scraping
   ❗ Requirements (from prompt):
@@ -83,5 +85,28 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   https://docs.python.org/3/library/email.examples.html
   https://www.youtube.com/watch?v=m9ojKEBYCvQ
   
+  ## Day 4: BMI calculator
+  
+  ❗ Requirements (from prompt):
+  
+  1) Write a program that, given weight in kgs and height in cms calculates BMI.
 
+  2) Then, a program at random chooses a sport activity and time (less or equal to the one given by user).
+  
+  3) Create a training plan in a text file for the next 7 days.
+
+  
+  ↗️ My extensions:
+  
+  Instead of if-else statements for BMI, I used a map (keys: description, values: smallest and largest value of the index for this category)
+  
+  Time of activity selected at random, min time is the value of index for given person (people with higher index ought to exercise more) max time is specified by user
+  
+  In any case time of the activity should be no shorter than 10 minutes.
+  
+  🧠 Learned today: 
+  
+  •  "string".format() - formatting string to include values in it, instead of using the + operator many times
+  
+ 
  
