@@ -10,6 +10,8 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   • [Day 3: Automatic email sending] (#Day 3: Automatic email sending)
   
   • [Day 4: BMI calculator] (#Day 4: BMI calculator)
+  
+  • [Day 5: Movie API] (#Day 5: Movie API)
 
 ## 🧐 Day 1: Palindromes, web scraping
   ❗ Requirements (from prompt):
@@ -85,7 +87,7 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   https://docs.python.org/3/library/email.examples.html
   https://www.youtube.com/watch?v=m9ojKEBYCvQ
   
-  ## Day 4: BMI calculator
+  ## ⚖️ Day 4: BMI calculator
   
   ❗ Requirements (from prompt):
   
@@ -108,5 +110,18 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   
   •  "string".format() - formatting string to include values in it, instead of using the + operator many times
   
+  ## 🎞️ Day 5: Movie API
+  
+ ❗ Requirements (from prompt):
+  
+  1) Find info about all the parts of movie that a user searches.
+  
+ ↗️ My extensions:
+  
+  Used a library terminaltables to display information.
+  
+ 🧠 Learned today: 
  
+  • A new, useful API: https://rapidapi.com/apidojo/api/imdb8/endpoints
+
  
