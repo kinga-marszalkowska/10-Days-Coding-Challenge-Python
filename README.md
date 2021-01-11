@@ -3,15 +3,17 @@ These are my solutions for the 10 day winter-break coding challenge. Event link:
 Each day there was a problem to solve. The idea of the challenge is to learn something new and adapt the problem to own programming skills. 
 
 ## 📖 Table of contents:
-  • [Day 1: Palindromes, web scraping] (#Day 1: Palindromes, web scraping)
+  • [Day 1: Palindromes, web scraping](#Day-1:-Palindromes,-web-scraping)
   
-  • [Day 2: API, openpyxl] (#Day 2: API, openpyxl)
+  • [Day 2: API, openpyxl](#Day-2:-API,-openpyxl)
   
-  • [Day 3: Automatic email sending] (#Day 3: Automatic email sending)
+  • [Day 3: Automatic email sending](#Day 3: Automatic email sending)
   
-  • [Day 4: BMI calculator] (#Day 4: BMI calculator)
+  • [Day 4: BMI calculator](#Day 4: BMI calculator)
   
-  • [Day 5: Movie API] (#Day 5: Movie API)
+  • [Day 5: Movie API](#Day 5: Movie API)
+  
+  • [Day 6: Image resizer](#Day 6: Image resizer)
 
 ## 🧐 Day 1: Palindromes, web scraping
   ❗ Requirements (from prompt):
