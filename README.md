@@ -7,13 +7,13 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   
   • [Day 2: API, openpyxl](#Day-2:-API,-openpyxl)
   
-  • [Day 3: Automatic email sending](#Day 3: Automatic email sending)
+  • [Day 3: Automatic email sending](#Day-3:-Automatic-email-sending)
   
-  • [Day 4: BMI calculator](#Day 4: BMI calculator)
+  • [Day 4: BMI calculator](#Day-4:-BMI-calculator)
   
-  • [Day 5: Movie API](#Day 5: Movie API)
+  • [Day 5: Movie API](#Day-5:-Movie-API)
   
-  • [Day 6: Image resizer](#Day 6: Image resizer)
+  • [Day 6: Image resizer](#Day-6:-Image-resizer)
 
 ## 🧐 Day 1: Palindromes, web scraping
   ❗ Requirements (from prompt):
@@ -89,7 +89,7 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   https://docs.python.org/3/library/email.examples.html
   https://www.youtube.com/watch?v=m9ojKEBYCvQ
   
-  ## ⚖️ Day 4: BMI calculator
+## ⚖️ Day 4: BMI calculator
   
   ❗ Requirements (from prompt):
   
@@ -112,7 +112,7 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   
   •  "string".format() - formatting string to include values in it, instead of using the + operator many times
   
-  ## 🎞️ Day 5: Movie API
+## 🎞️ Day 5: Movie API
   
  ❗ Requirements (from prompt):
   
@@ -125,5 +125,27 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
  🧠 Learned today: 
  
   • A new, useful API: https://rapidapi.com/apidojo/api/imdb8/endpoints
+  
+## 🖼️ Day 6: Image resizer
+  
+ ❗ Requirements (from prompt):
+  
+  1) Compress image
+  
+  2) Calculate saved space
+  
+ ↗️ My extensions:
+  
+  Used a tkinter library to select origin and destination folder.
+  
+ 🧠 Learned today: 
+ 
+  • Basics of Pillow library.
+  
+  • How to use tkinter directory selection. 
+  
+  🔗 Helpful link:
+  
+  https://auth0.com/blog/image-processing-in-python-with-pillow/
 
  
