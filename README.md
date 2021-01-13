@@ -14,6 +14,9 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   • [Day 5: Movie API](#Day-5:-Movie-API)
   
   • [Day 6: Image resizer](#Day-6:-Image-resizer)
+  
+  • [Day 7: Password_generator](#Day-7:-Password-generator)
+
 
 ## 🧐 Day 1: Palindromes, web scraping
   ❗ Requirements (from prompt):
@@ -147,5 +150,21 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   🔗 Helpful link:
   
   https://auth0.com/blog/image-processing-in-python-with-pillow/
-
+  
+  ##  Day 7: Password generator
+  
+ ❗ Requirements (from prompt):
+  
+  1) Generate password of a specified length.
+  
+ ↗️ My extensions:
+  
+  Used Datamuse API to get words to help remember their password.
+  
+  For letters - find words that start with a given letter. For special characters - find words that sound familliar or rhyme with, ex. brackets rhymes with jackets.
+  
+  These words than can be used to create a story / association to quickly remember secure and complicated password.
+  
+  
+  
  
