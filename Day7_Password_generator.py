@@ -3,11 +3,42 @@ from secrets import randbelow, choice
 import random
 import requests
 
+words = ["exclamation_mark", "quote", "hash", "dollar", "percent", "and", "sign", "brackets", "brackets",
+         "asterisk", "add", "comma", "subtract", "do", "slash", "colon", "semi-colon", "less", "equality", "greater",
+         "question_mark", "at", "brackets", "slash", "brackets", "caret", "underscore", "tick", "brackets",
+         "line", "brackets", "tilda"
+         ]
+# translate punctuation signs into words
+punctuation_words = dict()
+for i in range(len(list(punctuation))):
+    punctuation_words[list(punctuation)[i]] = words[i]
+
+
+class Response:
+    word: str
+    code: int
+
+    def __init__(self, word, code):
+        self.word = word
+        self.code = code
+
+    def is_correct(self):
+        if self.code == 200:
+            return True
+        else:
+            return False
+
 
 def get_word(url):
-    # adjectives for a noun "http://api.datamuse.com/words?rel_jjb=beach"
-    print(requests.request("GET", url).json()[0]["word"])
-    return requests.request("GET", url).json()[0]["word"]
+    try:
+        request = requests.request("GET", url).json()
+        number = randbelow(int(len(request)/2))
+        # return a word, and a success code 200 - OK
+        response = Response(request[number]["word"], 200)
+    except ValueError:
+        # return a generic word, just in case nothing matches and 404 error code
+        response = Response("and", 404)
+    return response
 
 
 def generate_password(special_chars, password_length):
@@ -28,22 +59,38 @@ def generate_password(special_chars, password_length):
 
 
 def generate_mnemonics(password):
-    #todo add words that start with a given letter
     mnemo = ""
     for i in range(len(password)):
-        if str(i) in ascii_lowercase or str(i) in ascii_uppercase:
-            mnemo += get_word("http://api.datamuse.com/words?sp={i}*".format(i=password[i])) + " "
+        # if it is a letter, get a word that starts with it
+        if password[i] in ascii_lowercase or password[i] in ascii_uppercase:
+            mnemo += get_word("http://api.datamuse.com/words?sp={i}*".format(i=password[i])).word + " "
+
+        elif password[i] in list(punctuation):
+            # for sign, get a word that spells similarly to the punctuation sign
+            word_spell = get_word("http://api.datamuse.com/words?rel_sp={i}".format(i=punctuation_words[password[i]]))
+            # if there is such a word, append it to the answer
+            if word_spell.is_correct():
+                mnemo += word_spell.word + " "
+            # if there is no such word, try with rhymes
+            else:
+                # get a word that rhymes with this punctuation sign
+                word_rhyme = get_word("http://api.datamuse.com/words?rel_rhy={i}".format(i=punctuation_words[password[i]]))
+                if word_rhyme.is_correct():
+                    mnemo += word_rhyme.word + " "
+                # if there are no rhymes return generic word
+                else:
+                    mnemo += word_rhyme.word + " "
+        elif password[i] in digits:
+            mnemo += str(password[i]) + " "
     return mnemo
 
 
 if __name__ == '__main__':
-    password_length = 10
-        # int(input("Password length: "))
-    special_chars = "y"
-        # input("Include special chars? [y/n]: ")
+    password_length = int(input("Password length: "))
+    special_chars = input("Include special chars? [y/n]: ")
 
     print("Choose the one that you like the most: ")
-    # print(generate_mnemonics(generate_password(special_chars, password_length)))
-    generate_password(special_chars, password_length)
-    generate_password(special_chars, password_length)
+    print(generate_mnemonics(generate_password(special_chars, password_length)))
+    print(generate_mnemonics(generate_password(special_chars, password_length)))
+    print(generate_mnemonics(generate_password(special_chars, password_length)))
 
