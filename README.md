@@ -16,6 +16,8 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   • [Day 6: Image resizer](#Day-6:-Image-resizer)
   
   • [Day 7: Password_generator](#Day-7:-Password-generator)
+  
+  • [Day 8: Geo locator](#Day-7:-Geo-locator)
 
 
 ## 🧐 Day 1: Palindromes, web scraping
@@ -165,6 +167,26 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   
   These words than can be used to create a story / association to quickly remember secure and complicated password.
   
+  ##  🌏 Day 8: Geo locator
+  
+ ❗ Requirements (from prompt):
+  
+  1) Calculate geo location between your location and any given.
+  
+ ↗️ My extensions:
+  
+  Used geocoder to get current location.
+  
+  🧠 Learned today: 
+ 
+  •  How to get current location with geocoder
+  
+  🔗 Helpful links:
+  
+  https://pl.wikibooks.org/.../Astrono.../Odleg%C5%82o%C5%9Bci
+
+  https://rapidapi.com/trueway/api/trueway-geocoding
+
   
   
  
