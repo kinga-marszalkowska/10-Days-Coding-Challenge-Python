@@ -1,11 +1,11 @@
 import requests
 from terminaltables import AsciiTable
 
+
 def get_books(author):
     url = '''http://data.bn.org.pl/api/bibs.json?author={author}&amp%3Bkind=
     ksi%C4%85%C5%BCka&fbclid=IwAR3LPbak_U4vrgQs-DpKhIaN35Wpqg1rQC3T7HVF-1sIy-BfK_aQb5ChDWY'''.format(
-        author=author
-    )
+        author=author)
 
     response = requests.request(method="GET", url=url)
     return response.json()

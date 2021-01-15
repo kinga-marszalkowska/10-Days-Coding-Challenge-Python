@@ -23,7 +23,6 @@ def display_movie_info():
     response_json = response.json()
     # pprint.pprint(response_json)
     arguments = ['l', 'y', 's']
-    # args = ['title', 'cast', 'year']
     table_data = [['Title', 'Year', 'Main cast']]
 
     for i in range(len(response_json['d'])):
