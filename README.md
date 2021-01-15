@@ -1,6 +1,20 @@
 # 10 day coding challenge with Python
-These are my solutions for the 10 day winter-break coding challenge. Event link: https://www.facebook.com/events/843253696243420?active_tab=about
-Each day there was a problem to solve. The idea of the challenge is to learn something new and adapt the problem to own programming skills. 
+This repository contains my solutions for the 10 day winter-break coding challenge. Each day there was a problem to solve. The idea of the challenge is to learn something new and adapt the problem to own programming skills. 
+
+Event link: https://www.facebook.com/events/843253696243420?active_tab=about
+
+What I learned during the challenge?
+
+• Discovered a wide range of Python modules,
+
+• Got familliar with many different APIs, processing requests and using the data in the code,
+
+• Improved my knowledge of modules previously known to me,
+
+• Coding regularily, the challenge gave me a routine to follow and problems to solve, which I often extended to make more challenging. 
+
+• Became more fluent with reading documentation.
+
 
 ## 📖 Table of contents:
   • [Day 1: Palindromes, web scraping](#Day-1:-Palindromes,-web-scraping)
@@ -18,7 +32,10 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   • [Day 7: Password_generator](#Day-7:-Password-generator)
   
   • [Day 8: Geo locator](#Day-7:-Geo-locator)
-
+  
+  • [Day 9: Library](#Day-9:-Library)
+  
+  • [Day 10: Challenge recap](#Day-10:-Challenge-recap)
 
 ## 🧐 Day 1: Palindromes, web scraping
   ❗ Requirements (from prompt):
@@ -29,7 +46,7 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   
   ↗️ My extension:
   
-  ad 2) Use selenium library to web scrape in search for data which I display in the terminal.
+  Use selenium library to web scrape in search for data which I display in the terminal.
   
   🧠 Learned today: 
   
@@ -153,7 +170,7 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   
   https://auth0.com/blog/image-processing-in-python-with-pillow/
   
-  ##  Day 7: Password generator
+  ## 🔒 Day 7: Password generator
   
  ❗ Requirements (from prompt):
   
@@ -161,7 +178,7 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   
  ↗️ My extensions:
   
-  Used Datamuse API to get words to help remember their password.
+  Used Datamuse API to find words that will help the user better remember their new password.
   
   For letters - find words that start with a given letter. For special characters - find words that sound familliar or rhyme with, ex. brackets rhymes with jackets.
   
@@ -177,7 +194,7 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
   
   Used geocoder to get current location.
   
-  🧠 Learned today: 
+ 🧠 Learned today: 
  
   •  How to get current location with geocoder
   
@@ -187,6 +204,47 @@ Each day there was a problem to solve. The idea of the challenge is to learn som
 
   https://rapidapi.com/trueway/api/trueway-geocoding
 
+  ## 📚 Day 9: Library
+  
+  ❗ Requirements (from prompt):
+  
+  1) Use Biblioteka Narodowa's (the National Library) API to get all books of a chosen author in a list.
+  
+ ↗️ My extensions:
+  
+  Used termitables to display the book's title, year of publishing and genre.
+  
+ 🧠 Learned today: 
+ 
+  •  Got more familliar with reading documentation. 
+  
+  🔗 Helpful links:
+  
+  http://data.bn.org.pl/?fbclid=IwAR0dG5T7JNimkjHp3NIBOAfYwZo2PEgB2_fY6hvIMJhNRZ0qop4QTUb4Ec4
+  
+  ##  Day 10: Challenge recap
+  
+  ❗ Requirements (from prompt):
+  
+  1) Calculate the total number of lines of code written in this challenge.
+  
+  2) Calculate the number of unique words in all files.
+  
+  3) Calculate the number of keywords.
+  
+  4) List all the modules used.
+  
+ ↗️ My extensions:
+  
+  For listing the modules, I found the lines in code that contained "import" and "from" keywords and got only the modules' names.
+  
+ 🧠 Learned today: 
+  
+  •  Discovered keywords library
+ 
+  •  Got more familliar with reading documentation. 
+  
+  
   
   
  
